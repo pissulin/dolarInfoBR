@@ -10,7 +10,7 @@ fetch('https://mini-server-cotacao.herokuapp.com/api/v1/cotacao',
     })
     .then(res => {
         console.log("Status "+ res.status)
-        res.json().then( x => console.log(x))
+        
     })
         
     //const resJSON = resp.json()
