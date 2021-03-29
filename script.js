@@ -1,7 +1,7 @@
 const res = async ()=> {
 fetch('https://mini-server-cotacao.herokuapp.com/api/v1/cotacao',
     {
-        
+        mode:'no-cors',
         headers: new Headers({
             'Content-Type': 'application/json',
             'Accept-Charset' : 'utf-8',
