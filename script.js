@@ -18,7 +18,6 @@ const res = async ()=> {
 res()
 
 
-
 function converterMoedas(){
     const moeda1 = document.getElementById('moedas1').value
 
@@ -43,4 +42,20 @@ function converterMoedas(){
         document.getElementById('moeda2').value = resConversaoString 
     }
     
+}
+
+function converterRealParaDolar(){
+    //pegando as moedas selecionadas 
+    const moeda1 = document.getElementById('moedas1').value
+    const moeda2 = document.getElementById('moedas2').value
+    
+    //pegando valor do inpur moeda2
+    const valorInputMoeda2 = document.getElementById('moeda2').value
+
+    //pegando a cotacao da moaeda1 selecionanda
+    const cotacao = parseFloat((document.querySelector(`.${moeda1}`).innerHTML).replace(",",".")).toFixed(2)
+
+    const soma = (parseFloat(valorInputMoeda2) / cotacao).toFixed(2)
+      
+    document.getElementById('moeda1').value = soma.toString()
 }
