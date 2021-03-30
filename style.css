@@ -8,10 +8,20 @@ body {
 }
 
 header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     height: 100px;
-    box-shadow: 0px -4px 20px -1px rgba(0,0,0,1);
-    -webkit-box-shadow: 0px -4px 20px -1px rgba(0,0,0,1);
-    -moz-box-shadow: 0px -4px 20px -1px rgba(0,0,0,1);
+    box-shadow: 0px -7px 10px -1px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px -7px 10px -1px rgba(0,0,0,1);
+    -moz-box-shadow: 0px -7px 10px -1px rgba(0,0,0,1);
+}
+
+#bannerCotacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
 }
 .container-conversao {
     display: flex;

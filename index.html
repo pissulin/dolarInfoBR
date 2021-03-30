@@ -8,10 +8,17 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Dolar info </title>
+    <script src="./script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Dolar hoje</h1>
+        <section id='bannerCotacao'>
+            <h3>Dólar Comercial: <span class="dolarComercial">0,00</span></h3>
+            <h3>Dólar Turismo: <span class="dolarTurismo">0,00</span></h3>
+            <h3>Dólar PTAX: <span class="dolarTpax">0,00</span></h3>
+            <h3>Euro Comercial: <span class="euroComercial">0,00</span></h3>
+            <h3>Euro x Dólar: <span class="dolarXeuro">0,00</span></h3>
+        </section>
     </header>
     <main>
         <div class="container-conversao">
@@ -23,11 +30,10 @@
                         <select name="moedas" id="moedas1">
                             <option value="dolarTurismo">Dolar Turismo</option>
                             <option value="dolarComercial">Dolar Comercial</option>
-                            <option value="real">Real</option>
                         </select>
                     </div>
                    
-                    <input id='moeda1' type=text value="1,00"></input>
+                    <input id='moeda1' type=text value="1,00" onkeyup={converterMoedas()}></input>
                 </div>
 
                 <img src="./img/retweet-solid.svg" alt="icone de mudar lado"  width="50px" height="50px">
@@ -36,7 +42,6 @@
                         <label for="moeda2" >Moeda 2 </label>
                         <select name="moedas" id="moedas2">
                             <option value="real">Real</option>
-                            <option value="dolarTurismo">Dolar </option>
                         </select>
                     </div>
                     
@@ -48,6 +53,6 @@
     </main>
     <footer></footer>
 
-<script src="./script.js"></script>    
+    
 </body>
 </html>
