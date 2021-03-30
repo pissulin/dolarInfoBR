@@ -93,11 +93,27 @@ input {
     background-color: goldenrod;
     width: 90%;
     height: 200px;
-    margin: 0 auto;
+    margin: 50px auto;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: black;
     font-size: 30px;
+}
+
+article {
+    width: 50vw ;
+    margin: 50px auto 0;
+    text-align: justify;
+    color: #212121;
+    line-height: 25px;
+}
+
+article h2 {
+    font-size: 1.5em;
+}
+
+strong {
+    font-size: 1.1em;
 }

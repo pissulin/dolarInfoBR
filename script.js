@@ -9,9 +9,7 @@ const res = async ()=> {
      document.querySelector('.dolarTurismo').innerHTML = resu[1].valor
      document.querySelector('.dolarTpax').innerHTML = resu[2].valor
      document.querySelector('.euroComercial').innerHTML = resu[3].valor
-     document.querySelector('.dolarXeuro').innerHTML = resu[4].valor
-
-     
+     document.querySelector('.dolarXeuro').innerHTML = resu[4].valor    
     
 }
     
