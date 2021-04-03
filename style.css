@@ -116,3 +116,7 @@ article h2 {
 strong {
     font-size: 1.1em;
 }
+
+main {
+    text-align: center;
+}
