@@ -24,8 +24,32 @@
     <main>
         <section>
         <div class="container-conversao">
-            <iframe height="375" width="197" src="https://ssltools.forexprostools.com/currency-converter/index.php?from=17&to=12&force_lang=12"></iframe><br /><table width="197"><tr><td><span style="font-size: 11px;color: #333333;text-decoration: none;">Conversor de Moedas fornecido por <a href="https://br.investing.com/" rel="nofollow" target="_blank" style="font-size: 11px;color: #06529D; font-weight: bold;" class="underline_link">Investing.com Brasil</a>.</span></td></tr></table>
-            
+            <img src="./img/dollar-currency-symbol.png" alt="simbolo da moeda" width="70px" height="70px">
+            <div class="conversao">
+                <div class="grupoInput">
+                    <div class="moedas">
+                        <label for="moeda1">Moeda 1</label>
+                        <select name="moedas" id="moedas1">
+                            <option value="dolarComercial">Dolar Comercial</option>
+                            <option value="dolarTurismo">Dolar Turismo</option>
+                        </select>
+                    </div>
+                   
+                    <input id='moeda1' type=text value="1.00" onkeyup={converterMoedas()}></input>
+                </div>
+
+                <img src="./img/retweet-solid.svg" alt="icone de mudar lado"  width="50px" height="50px">
+                <div class="grupoInput">
+                    <div class="moedas">
+                        <label for="moeda2" >Moeda 2 </label>
+                        <select name="moedas" id="moedas2">
+                            <option value="real">Real</option>
+                        </select>
+                    </div>
+                    
+                    <input id='moeda2' type=text value="1.00" onkeyup={converterRealParaDolar()}></input>
+                </div>
+            </div>
         </div>
         <div class="banner"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- Anuncion em linha -->
